@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey</title>
+    </head>
+    <header>
+        <h1 id="title">Let Me Know How I'm Doing</h1>
+    </header>
+    <body>
+        <p id="description">I'd love to know what you think, so please answer some questions and leave a comment if you wish. Thanks!</p>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name:</label><br/>
+            <input type="text" name="name" placeholder="Name" id="name" required><br/>
+            <label for="email" id="email-label">Email:</label><br/>
+            <input type="email" name="email" placeholder="Email" id="email" pattern="email" required><br/>
+            Contact me:<br/>
+            <select name="contactme" id="dropdown">
+                <option value="phone">Phone</option>
+                <option value="Email">Email</option>
+                <option value="donotcontact">Please don't contact me</option>
+            </select><br/>
+            Where did you find out about me?<br/>
+            <input type="radio" name="source" value="facebook">Facebook<br/>
+            <input type="radio" name="source" value="twitter">Twitter<br/>
+            <input type="radio" name="source" value="friend">Friend<br/>
+            What kind of content do you like to see?<br/>
+            <input type="checkbox" name="blogs" value="blogs">Blogs<br/>
+            <input type="checkbox" name="videos" value="videos">Videos<br/>
+            <input type="checkbox" name="recipes" value="recipes">Recipes<br/>
+            <label for="number" id="number-label">How am I doing? Rate 1-10:</label><br/>
+            <input type="number" name="number"placeholder="0" id="number" min="0" max="10"><br/>
+            <textarea name="comment" rows="5" cols="20">
+                Please leave a comment.
+            </textarea><br/>
+            <button type="submit" value="submit" id="submit">submit</button>
+        </form>
+    </body>
+</html>
